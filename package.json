@@ -1,0 +1,25 @@
+{
+  "name": "tele-bot",
+  "version": "1.0.0",
+  "description": "bot for telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkirahX/tele-sbot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "akirahx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkirahX/tele-sbot/issues"
+  },
+  "homepage": "https://github.com/AkirahX/tele-sbot#readme",
+  "dependencies": {
+    "telegraf": "^4.4.1"
+  }
+}
