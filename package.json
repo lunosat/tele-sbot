@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AkirahX/tele-sbot#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "telegraf": "^4.4.1"
   }
 }

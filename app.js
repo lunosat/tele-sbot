@@ -1,4 +1,5 @@
 const {Telegraf} = require('telegraf')
+const axios = require('axios')
 
 const bot = new Telegraf('1943842646:AAHx9LYfHnCoeK6DaDuGyeQUQei3biVu5yA')
 
@@ -9,7 +10,16 @@ bot.hears('hi', (ctx) => ctx.reply('Opa'))
 bot.launch()
 
 bot.command('teste', (ctx) => {
-    ctx.reply('X')
+    try{
+        axios.get(`https://sapphire-api.herokuapp.com/api/textmaker/random?text=Alphabot&theme=art-quote&apikey=Alphabot`).then(res => {
+            //conn.sendFile(m.chat, res.data.result.url, 'glitch.jpg', 'Bye Oficial Sapphire API')
+            //ctx.reply(res.data.result.quotes)
+            ctx.replyWithPhoto(res.data.result.url)
+        })
+    } catch (err) {
+        console.log(err)
+    }
+    console.log('uu')
 })
 
 process.once('SIGINT', () => bot.stop('SIGINT'))
