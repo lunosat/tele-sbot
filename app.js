@@ -11,7 +11,7 @@ bot.launch()
 
 bot.command('teste', (ctx) => {
     try{
-        axios.get(`https://sapphire-api.herokuapp.com/api/textmaker/random?text=Alphabot&theme=art-quote&apikey=Alphabot`).then(res => {
+        axios.get(`https://sapphire-api.herokuapp.com/api/textmaker/random?text=Akirah&theme=art-quote&apikey=Alphabot`).then(res => {
             //conn.sendFile(m.chat, res.data.result.url, 'glitch.jpg', 'Bye Oficial Sapphire API')
             //ctx.reply(res.data.result.quotes)
             ctx.replyWithPhoto(res.data.result.url)
