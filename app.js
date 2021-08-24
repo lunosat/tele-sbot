@@ -19,6 +19,7 @@ bot.command('love', (ctx) => {
         try{
             axios.get(`https://sapphire-api.herokuapp.com/api/textmaker/random?text=${query}&theme=art-quote&apikey=Alphabot`).then(res => {
                 ctx.replyWithPhoto(res.data.result.url)
+                console.log('Yup, alguém usou :)')
             })
         } catch (err) {
             console.log(err)
