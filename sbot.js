@@ -8,7 +8,6 @@ bot.start((ctx) => ctx.reply(startText))
 bot.help((ctx) => ctx.reply('Comandos:\n\n/love'))
 bot.on('sticker', (ctx) => ctx.reply('Ok'))
 bot.hears('hi', (ctx) => ctx.reply('Opa'))
-bot.telegram.
 bot.launch()
 
 bot.command('love', (ctx) => {
