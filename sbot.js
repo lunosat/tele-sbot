@@ -3,7 +3,7 @@ const axios = require('axios')
 
 const bot = new Telegraf('1956985769:AAFn7XmAwlprW811yU-zbbDXO7QkW4gcOmU')
 
-let startText = 'Olá, sejá bem vindo ao Image Maker, um simples bot desenvolvido para lhe entregar belas imagens\n\nAcompanhe nosso canal: t.me/SapphireNetwork'
+let startText = 'Olá, sejá bem vindo ao Image Maker, um simples bot desenvolvido para lhe entregar belas imagens\n\nAcompanhe nosso canal: t.me/SapphireNetwork\n\n/help'
 bot.start((ctx) => ctx.reply(startText))
 bot.help((ctx) => ctx.reply('Comandos:\n\n/love'))
 bot.on('sticker', (ctx) => ctx.reply('Ok'))
